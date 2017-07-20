@@ -14,7 +14,7 @@ def main():
     rmv_dirs = re.search('\.',str(dirs))
     dirs = remove_values_from_list(dirs, rmv_dirs)
 
-    f = open("installed_packages.txt", "a")
+    f = open(".installed_packages.txt", "a")
     print(dirs)
     if f.mode == 'a':
         for file in dirs:
