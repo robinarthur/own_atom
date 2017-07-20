@@ -4,13 +4,14 @@ import os, sys
 
 def main():
     path = "C:/Users/tank/Documents/GitHub/own_atom"
-    dirs = os.listdir(path)
+    path2 = "C:/Users/CKr/Documents/GitHub/own_atom"
+    dirs = os.listdir(path2)
 
     f = open("installed_packages.txt", "a")
-    print(f.mode)
+    print(dirs)
     if f.mode == 'a':
         for file in dirs:
-            print(file)
+            print(str(file))
             f.write(str(file))
 
     f.close
